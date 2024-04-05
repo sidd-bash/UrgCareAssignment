@@ -17,6 +17,6 @@ const config = {connectionString: process.env.POSTGRES_URL}
 const pool = new Pool(config)
 
 app.get('/gameBanners',async (req,res)=>{
-    const result = await pool.query('SELECT image, id, name from games')
+    const result = await pool.query('SELECT image, id, name, size from games order by id')
     res.send(result.rows)
 })

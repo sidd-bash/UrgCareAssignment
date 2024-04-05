@@ -1,0 +1,85 @@
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:1vw
+}
+.navSection1{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 30px 10px 30px;
+
+}
+input{
+    height:fit-content;
+    padding:10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+nav{
+    background: rgba(33,32,33,255);
+}
+
+.navTabs{
+    color: #feb000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #313031;
+    padding:0px 30px 0px 30px;
+
+
+}
+.tabSection1 > button{
+    color:#feb000;
+    background: transparent;
+    border:none;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    padding:0 10px 0 10px
+}
+.tabSection1 > button:hover{
+    background: #444;
+}
+.tabSection2{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.settings,.bet{
+    display: flex;
+    align-items: center;
+    gap:5px
+}
+.bet{
+    background: #aaa;
+    border-top: 3px solid #feb000;
+    color:white;
+    /* height: 3rem; */
+    padding: 5px
+}
+.login{
+    background: red;
+    border:none;
+    padding:8px;
+    border-radius:5px;
+    display:flex
+}
+.searchEvent{
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    /* padding:1rem; */
+    gap:1rem;
+    padding-left: 1rem;
+    /* justify-content: space-evenly; */
+
+}
+.searchEvent > input{
+    border: none;
+}
+/* .searchEvent > input:focus{
+    outline:none
+} */

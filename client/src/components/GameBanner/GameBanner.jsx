@@ -1,9 +1,9 @@
 import React from 'react'
-
+import './GameBanner.css'
 export default function GameBanner({game}) {
   return (
-      <button>
-        <img src={game.image}></img>
+      <button className='game'>
+        <img src={require(`../../images/${game.image}`)} width={game.size*300}></img>
       </button>
 
   )

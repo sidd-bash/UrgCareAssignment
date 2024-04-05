@@ -1,0 +1,19 @@
+.games{
+    display: block;
+    padding:2rem;
+    margin:auto;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 4; */
+
+    width: 82%;
+    /* border: ; */
+    /* border:2px solid black; */
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+    /* border:2px solid black; */
+}

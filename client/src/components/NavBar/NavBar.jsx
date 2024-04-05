@@ -1,17 +1,29 @@
 import React from 'react'
-
+import logo from '../../images/SkyGamesLogo.png'
+import { FaUser } from "react-icons/fa";
+import "./NavBar.css";
+import { FaStop } from "react-icons/fa";
+import { IoIosSettings } from "react-icons/io";
+import { CiSearch } from "react-icons/ci";
 export default function NavBar() {
   return (
     <nav>
-        <div>
+        <div className='navSection1'>
 
-        
-        logo
-        SearchBar
-        username input
-        password input
-        validation link
-        login button
+        <div className='flex'>
+            <img src={logo} alt="Sky Games Logo" />
+            <div className='searchEvent' tabIndex="0">
+                <CiSearch/>
+                <input type="text" placeholder='Search Events' tabIndex="-1"/>
+            </div>
+        </div>
+        <div className='flex'>
+            <FaUser style={{color:"#feb000"}}/>
+            <input type="text" placeholder='Username' />
+            <input type="text" placeholder='Password' />
+            <input type="text" placeholder='Validation' />
+            <button className='login'>Login</button>
+        </div>
         </div>
         <div className='navTabs'>
             <div className='tabSection1'>
@@ -32,13 +44,13 @@ export default function NavBar() {
                 <div>
                     Time Zone: GMT+5:30
                 </div>
-                <div>
-                    Bet Icon
+                <div className='bet'>
+                    <FaStop/>
                     One Click Bet
                 </div>
-                <div>
+                <div className='settings'>
                     Setting
-                    Setting icon
+                    <IoIosSettings />
                 </div>
                 
             </div>
