@@ -1,11 +1,15 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import logo from '../../images/SkyGamesLogo.png'
 import { FaUser } from "react-icons/fa";
 import "./NavBar.css";
 import { FaStop } from "react-icons/fa";
 import { IoIosSettings } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
+import { ModalContext } from '../../Contexts/ModalContext';
+
 export default function NavBar() {
+
+    const {setModal} = useContext(ModalContext);
   return (
     <nav>
         <div className='navSection1'>
@@ -48,7 +52,7 @@ export default function NavBar() {
                     <FaStop/>
                     One Click Bet
                 </div>
-                <div className='settings'>
+                <div className='settings' onClick={setModal}>
                     Setting
                     <IoIosSettings />
                 </div>

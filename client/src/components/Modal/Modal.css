@@ -1,0 +1,38 @@
+.modal{
+    display: flex;
+    background:#feb006;
+    border-radius: 10px;
+    justify-content: space-between;
+    /* gap:4rem; */
+    position: fixed;
+    align-items: center;
+    height: fit-content;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    z-index: 100;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    padding: 3rem;
+    
+}
+form > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    padding:10px;
+    font-weight: 1000;
+    color:#feb006;
+    background:#313031;
+    border:none;
+}
+.cross{
+    position: fixed;
+    top:3rem;
+    right:3rem
+}
